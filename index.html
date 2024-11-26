@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fire Indicator Panel Trainer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="panel">
+        <h1>Fire Indicator Panel Simulator</h1>
+        
+        <!-- Pager Message -->
+        <div class="pager">
+            <h2>Pager Message:</h2>
+            <p id="pager-message">Zone 1: Kitchen Fire</p>
+        </div>
+
+        <!-- Indicator Lights -->
+        <div class="indicators">
+            <div id="alarm-light" class="light red"></div>
+            <p>Alarm</p>
+            <div id="fault-light" class="light yellow"></div>
+            <p>Fault</p>
+            <div id="normal-light" class="light green"></div>
+            <p>Normal</p>
+        </div>
+
+        <!-- Microphone Button -->
+        <button id="microphone" class="button">Microphone</button>
+
+        <!-- Key Switch -->
+        <div class="key-switch">
+            <label for="key-mode">Key Mode:</label>
+            <select id="key-mode">
+                <option value="auto">Auto</option>
+                <option value="manual">Manual</option>
+            </select>
+        </div>
+
+        <!-- Control Buttons -->
+        <div class="controls">
+            <button id="silence" class="button">Silence</button>
+            <button id="reset" class="button">Reset</button>
+            <button id="evacuate" class="button">Evacuate</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
